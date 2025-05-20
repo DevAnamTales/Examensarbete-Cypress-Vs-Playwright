@@ -2,6 +2,7 @@
   "name": "examensarbete-cypress-vs-playwright",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open"
