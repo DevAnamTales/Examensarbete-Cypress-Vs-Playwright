@@ -7,8 +7,9 @@ export class CustomWorld {
   page!: Page;
 
   async init() {
-    this.browser = await chromium.launch({ headless: true });
+    this.browser = await chromium.launch({ headless: false });
     this.context = await this.browser.newContext();
+    await this.context.clearCookies();
     this.page = await this.context.newPage();
   }
 
