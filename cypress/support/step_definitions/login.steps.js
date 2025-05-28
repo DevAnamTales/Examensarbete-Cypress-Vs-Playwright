@@ -46,6 +46,7 @@ When('user clicks on {string} button', (buttonText) => {
     cy.get('button[type="submit"]').contains(buttonText).click();
   });
 });
+
 Given('the user enters login credentials', () => {
 
   cy.origin('https://login.coop.se', { args: { email, password } }, ({ email, password }) => {
