@@ -34,7 +34,10 @@ jobs:
 
       - name: Run Playwright tests
         working-directory: ./playwright
-        run: npm run test --env coopEmail=$COOP_EMAIL,coopPassword=$COOP_PASSWORD
+        run: npm run test
+        env:
+          COOP_EMAIL: ${{ secrets.COOP_EMAIL }}
+          COOP_PASSWORD: ${{ secrets.COOP_PASSWORD }}
 
       - name: Upload Playwright report
         if: always()
