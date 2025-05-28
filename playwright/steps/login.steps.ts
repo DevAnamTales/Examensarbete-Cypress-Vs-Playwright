@@ -5,8 +5,8 @@ import { CustomWorld } from '../support/world';
 import * as dotenv from 'dotenv';
 dotenv.config();
 
-const email = process.env.coopEmail;
-const password = process.env.coopPassword;
+const email = process.env.COOP_EMAIL;
+const password = process.env.COOP_PASSWORD;
 
 Given('the user visits the Coop homepage', async function (this: CustomWorld) {
   await this.page.goto('https://www.coop.se');
