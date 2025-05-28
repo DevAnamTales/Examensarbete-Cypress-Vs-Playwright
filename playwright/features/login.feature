@@ -6,4 +6,4 @@ Feature: Login to Coop
     And user chooses the "Med e-post" option
     And the user enters login credentials
     When user clicks on "Logga in" button
-    Then the page title should contain "mitt-coop"
+    Then the url should contain "mitt-coop"
