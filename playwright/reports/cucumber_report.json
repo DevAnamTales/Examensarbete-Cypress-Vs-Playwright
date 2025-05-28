@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 590519599
+              "duration": 517187799
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 5,
             "name": "the user is logged in",
             "match": {
-              "location": "steps\\login.steps.ts:66"
+              "location": "steps\\login.steps.ts:68"
             },
             "result": {
               "status": "passed",
-              "duration": 3215783599
+              "duration": 2813781300
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1827946299
+              "duration": 1734826799
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 519280999
+              "duration": 557794099
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 225864099
+              "duration": 6515130000
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7724800
+              "duration": 16519500
             }
           },
           {
@@ -87,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 459191299
+              "duration": 492890399
             }
           }
         ],
@@ -127,7 +127,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 537547700
+              "duration": 561347899
             }
           },
           {
@@ -136,11 +136,11 @@
             "line": 4,
             "name": "the user visits the Coop homepage",
             "match": {
-              "location": "steps\\login.steps.ts:11"
+              "location": "steps\\login.steps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 1651144399
+              "duration": 1368291000
             }
           },
           {
@@ -149,11 +149,11 @@
             "line": 5,
             "name": "user clicks on the \"Logga in\" button",
             "match": {
-              "location": "steps\\login.steps.ts:27"
+              "location": "steps\\login.steps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 449443999
+              "duration": 960133799
             }
           },
           {
@@ -162,11 +162,11 @@
             "line": 6,
             "name": "user chooses the \"Med e-post\" option",
             "match": {
-              "location": "steps\\login.steps.ts:42"
+              "location": "steps\\login.steps.ts:44"
             },
             "result": {
               "status": "passed",
-              "duration": 671043700
+              "duration": 698346000
             }
           },
           {
@@ -175,12 +175,11 @@
             "line": 7,
             "name": "the user enters login credentials",
             "match": {
-              "location": "steps\\login.steps.ts:33"
+              "location": "steps\\login.steps.ts:35"
             },
             "result": {
-              "status": "failed",
-              "duration": 30001819800,
-              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\MyProject\\Examensarbete-Cypress-Vs-Playwright\\playwright\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:588:17)\n    at processTimers (node:internal/timers:523:7)"
+              "status": "passed",
+              "duration": 52831700
             }
           },
           {
@@ -189,11 +188,11 @@
             "line": 8,
             "name": "user clicks on \"Logga in\" button",
             "match": {
-              "location": "steps\\login.steps.ts:60"
+              "location": "steps\\login.steps.ts:62"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 72035499
             }
           },
           {
@@ -202,11 +201,11 @@
             "line": 9,
             "name": "the page title should contain \"mitt-coop\"",
             "match": {
-              "location": "steps\\login.steps.ts:21"
+              "location": "steps\\login.steps.ts:23"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2006947000
             }
           },
           {
@@ -214,7 +213,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 269652600
+              "duration": 369468600
             }
           }
         ],
@@ -244,7 +243,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 525271700
+              "duration": 522621800
             }
           },
           {
@@ -253,11 +252,11 @@
             "line": 4,
             "name": "the user visits the Coop homepage",
             "match": {
-              "location": "steps\\login.steps.ts:11"
+              "location": "steps\\login.steps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 1252492599
+              "duration": 1453177100
             }
           },
           {
@@ -270,7 +269,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 170684800
+              "duration": 527034500
             }
           },
           {
@@ -283,7 +282,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 268916100
+              "duration": 512881199
             }
           },
           {
@@ -291,7 +290,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 329295199
+              "duration": 377544900
             }
           }
         ],
