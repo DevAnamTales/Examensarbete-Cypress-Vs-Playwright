@@ -1,9 +1,11 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
 import { CustomWorld } from '../support/world';
+import * as path from 'path';
+
 
 import * as dotenv from 'dotenv';
-dotenv.config();
+dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
 const email = process.env.COOP_EMAIL;
 const password = process.env.COOP_PASSWORD;
