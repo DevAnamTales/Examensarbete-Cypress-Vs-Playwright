@@ -20,7 +20,7 @@ Given('the user visits the Coop homepage', async function (this: CustomWorld) {
   }
 });
 
-Then('the page title should contain {string}', async function (this: CustomWorld, partialUrl: string) {
+Then('the url should contain {string}', async function (this: CustomWorld, partialUrl: string) {
   await this.page.waitForTimeout(2000);
   const currentUrl = this.page.url();
   expect(currentUrl).toContain(partialUrl);
