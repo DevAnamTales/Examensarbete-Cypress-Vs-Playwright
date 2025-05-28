@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1088923199
+              "duration": 590519599
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 5,
             "name": "the user is logged in",
             "match": {
-              "location": "steps\\login.steps.ts:54"
+              "location": "steps\\login.steps.ts:66"
             },
             "result": {
               "status": "passed",
-              "duration": 4954464599
+              "duration": 3215783599
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3270162599
+              "duration": 1827946299
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1254487799
+              "duration": 519280999
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 429963800
+              "duration": 225864099
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14663899
+              "duration": 7724800
             }
           },
           {
@@ -87,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 839497500
+              "duration": 459191299
             }
           }
         ],
@@ -119,7 +119,7 @@
         "description": "",
         "id": "login-to-coop;user-visits-homepage",
         "keyword": "Scenario Outline",
-        "line": 13,
+        "line": 3,
         "name": "User visits homepage",
         "steps": [
           {
@@ -127,7 +127,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 914977500
+              "duration": 537547700
             }
           },
           {
@@ -136,11 +136,11 @@
             "line": 4,
             "name": "the user visits the Coop homepage",
             "match": {
-              "location": "steps\\login.steps.ts:8"
+              "location": "steps\\login.steps.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 3277157000
+              "duration": 1651144399
             }
           },
           {
@@ -149,11 +149,11 @@
             "line": 5,
             "name": "user clicks on the \"Logga in\" button",
             "match": {
-              "location": "steps\\login.steps.ts:24"
+              "location": "steps\\login.steps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 293938699
+              "duration": 449443999
             }
           },
           {
@@ -162,24 +162,25 @@
             "line": 6,
             "name": "user chooses the \"Med e-post\" option",
             "match": {
-              "location": "steps\\login.steps.ts:30"
+              "location": "steps\\login.steps.ts:42"
             },
             "result": {
               "status": "passed",
-              "duration": 1196622800
+              "duration": 671043700
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "user enters the \"anam-rehman@live.com\" and \"Test1234\"",
+            "name": "the user enters login credentials",
             "match": {
-              "location": "steps\\login.steps.ts:37"
+              "location": "steps\\login.steps.ts:33"
             },
             "result": {
-              "status": "passed",
-              "duration": 115214199
+              "status": "failed",
+              "duration": 30001819800,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\MyProject\\Examensarbete-Cypress-Vs-Playwright\\playwright\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:588:17)\n    at processTimers (node:internal/timers:523:7)"
             }
           },
           {
@@ -188,11 +189,11 @@
             "line": 8,
             "name": "user clicks on \"Logga in\" button",
             "match": {
-              "location": "steps\\login.steps.ts:48"
+              "location": "steps\\login.steps.ts:60"
             },
             "result": {
-              "status": "passed",
-              "duration": 128135500
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -201,11 +202,11 @@
             "line": 9,
             "name": "the page title should contain \"mitt-coop\"",
             "match": {
-              "location": "steps\\login.steps.ts:18"
+              "location": "steps\\login.steps.ts:21"
             },
             "result": {
-              "status": "passed",
-              "duration": 2007996600
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -213,7 +214,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 831880399
+              "duration": 269652600
             }
           }
         ],
@@ -243,7 +244,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 967994999
+              "duration": 525271700
             }
           },
           {
@@ -252,11 +253,11 @@
             "line": 4,
             "name": "the user visits the Coop homepage",
             "match": {
-              "location": "steps\\login.steps.ts:8"
+              "location": "steps\\login.steps.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 2694895100
+              "duration": 1252492599
             }
           },
           {
@@ -269,7 +270,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 225714299
+              "duration": 170684800
             }
           },
           {
@@ -282,7 +283,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 724812500
+              "duration": 268916100
             }
           },
           {
@@ -290,7 +291,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 638083399
+              "duration": 329295199
             }
           }
         ],
