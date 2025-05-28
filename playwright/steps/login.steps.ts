@@ -2,8 +2,11 @@ import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
 import { CustomWorld } from '../support/world';
 
-import * as dotenv from 'dotenv'; 
+import * as dotenv from 'dotenv';
 dotenv.config();
+
+const email = process.env.coopEmail;
+const password = process.env.coopPassword;
 
 Given('the user visits the Coop homepage', async function (this: CustomWorld) {
   await this.page.goto('https://www.coop.se');
@@ -26,6 +29,15 @@ Given('user clicks on the {string} button', async function (this: CustomWorld, l
   await expect(button).toBeVisible();
   await button.click();
 });
+
+Given('the user enters login credentials', async function () {
+  // Assuming 'page' is available in the World/context
+  //await this.page.goto('https://login.coop.se');
+
+  await this.page.fill('input[type="email"]', email);
+  await this.page.fill('input[type="password"]', password);
+});
+
 
 Given('user chooses the {string} option', async function (this: CustomWorld, optionText: string) {
   await this.page.waitForURL(/login\.coop\.se/);
@@ -52,8 +64,6 @@ When('user clicks on {string} button', async function (this: CustomWorld, button
 });
 
 Given('the user is logged in', { timeout: 30000 }, async function (this: CustomWorld) {
-  const email = process.env.coopEmail;
-  const password = process.env.coopPassword;
 
   if (!email || !password) {
     throw new Error('Missing coopEmail or coopPassword in environment variables');
