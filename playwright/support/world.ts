@@ -8,10 +8,13 @@ export class CustomWorld {
 
   async init() {
     this.browser = await chromium.launch({ headless: true });
-    
+
     this.context = await this.browser.newContext();
-    await this.context.clearCookies();
     this.page = await this.context.newPage();
+
+    // Navigate to base URL before clearing cookies (workaround)
+    await this.page.goto('https://www.coop.se');
+    await this.context.clearCookies();
   }
 
   async close() {
