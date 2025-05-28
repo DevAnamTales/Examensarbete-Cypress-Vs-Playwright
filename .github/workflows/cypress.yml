@@ -30,7 +30,7 @@ jobs:
           echo "COOP_PASSWORD=$COOP_PASSWORD"
 
       - name: Run Cypress tests
-        run: npx cypress run
+        run: npx cypress run --env coopEmail=$COOP_EMAIL,coopPassword=$COOP_PASSWORD
 
       - name: Upload Cypress videos and screenshots on failure
         if: failure()
