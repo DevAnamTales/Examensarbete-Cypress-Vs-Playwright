@@ -1,6 +1,6 @@
 Feature: Login to Coop
 
-  Scenario: User visits homepage
+  Scenario Outline: User visits homepage
     Given the user visits the Coop homepage
     And user clicks on the "Logga in" button
     And user chooses the "Med e-post" option
