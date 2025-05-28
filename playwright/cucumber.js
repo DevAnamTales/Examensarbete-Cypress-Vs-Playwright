@@ -1,10 +1,3 @@
 module.exports = {
-  default: {
-    require: ["step_definitions/**/*.ts"],
-    requireModule: ["ts-node/register"],
-    format: ["html:cucumber-report.html"],
-    paths: ["features/**/*.feature"],
-    parallel: 1,
-    timeout: 60000
-  },
+  default: '--require-module ts-node/register --require support/world.ts --require support/hooks.ts --require steps/**/*.ts features/**/*.feature --publish-quiet'
 };
