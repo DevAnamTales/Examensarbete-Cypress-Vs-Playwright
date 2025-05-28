@@ -9,7 +9,9 @@ on:
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
-
+     env:
+      COOP_EMAIL: ${{ secrets.COOP_EMAIL }}
+      COOP_PASSWORD: ${{ secrets.COOP_PASSWORD }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
